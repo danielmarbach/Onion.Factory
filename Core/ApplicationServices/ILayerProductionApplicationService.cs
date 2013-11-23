@@ -1,4 +1,4 @@
-﻿namespace Onion.Factory.Core
+﻿namespace Onion.Factory.Core.ApplicationServices
 {
     using System.Collections.Generic;
 

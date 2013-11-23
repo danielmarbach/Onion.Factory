@@ -1,6 +1,9 @@
 ﻿namespace Onion.Factory
 {
     using Onion.Factory.Core;
+    using Onion.Factory.Core.ApplicationServices;
+    using Onion.Factory.Core.Domain;
+    using Onion.Factory.Core.DomainServices;
 
     public class LayerProductionPresenter
     {

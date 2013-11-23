@@ -3,6 +3,8 @@
     using System.Transactions;
 
     using Onion.Factory.Core;
+    using Onion.Factory.Core.Domain;
+    using Onion.Factory.Core.DomainServices;
 
     public class FactoryRepository : IFactoryRepository
     {

@@ -1,6 +1,8 @@
-﻿namespace Onion.Factory.Core
+﻿namespace Onion.Factory.Core.DomainServices
 {
     using System.Collections.Generic;
+
+    using Onion.Factory.Core.Domain;
 
     public class FactoryDomainService : IFactoryDomainService
     {

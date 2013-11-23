@@ -3,6 +3,7 @@
     using System;
 
     using Onion.Factory.Core;
+    using Onion.Factory.Core.Domain;
 
     public class FactoryOpened : IFactoryOpened
     {

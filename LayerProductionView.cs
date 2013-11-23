@@ -4,6 +4,7 @@
     using System.Collections.Generic;
 
     using Onion.Factory.Core;
+    using Onion.Factory.Core.Domain;
 
     public class LayerProductionView
     {
