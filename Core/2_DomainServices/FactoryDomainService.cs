@@ -33,7 +33,7 @@
 
             factory.Assign(producedLayers);
 
-            this.repository.Save(factory);
+            this.repository.Update(factory);
         }
     }
 }

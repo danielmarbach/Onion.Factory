@@ -17,9 +17,9 @@
             this.factoryDomainService = factoryDomainService;
         }
 
-        public Factory OpenFactory(FactoryId factoryId)
+        public Factory OpenFactory(FactoryId factoryId, string factoryName)
         {
-            Factory factory = this.factoryDomainService.OpenFactory(factoryId);
+            Factory factory = this.factoryDomainService.OpenFactory(factoryId, factoryName);
 
             return factory;
         }

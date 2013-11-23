@@ -1,6 +1,5 @@
 ﻿namespace Onion.Factory
 {
-    using Onion.Factory.Core;
     using Onion.Factory.Core.ApplicationServices;
     using Onion.Factory.Core.Domain;
     using Onion.Factory.Core.DomainServices;
@@ -47,7 +46,7 @@
 
             var factoryId = new FactoryId(e.FactoryName.Replace(" ", "_"));
 
-            this.layerProductionApplicationService.OpenFactory(factoryId);
+            this.layerProductionApplicationService.OpenFactory(factoryId, e.FactoryName);
         }
     }
 }

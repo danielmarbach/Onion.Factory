@@ -18,6 +18,16 @@
             }
         }
 
+        public void Update(Factory factory)
+        {
+            using (var tx = new TransactionScope())
+            {
+                Database.Update(factory.Id, factory);
+
+                tx.Complete();
+            }
+        }
+
         public Factory Load(FactoryId factoryId)
         {
             return (Factory)Database.Select(factoryId);

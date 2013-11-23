@@ -1,0 +1,1 @@
+The namespaces in this sample simulate rings.

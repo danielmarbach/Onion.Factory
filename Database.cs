@@ -11,6 +11,11 @@
             everything.Add(id, entity);
         }
 
+        public static void Update(object id, object entity)
+        {
+            everything[id] = entity;
+        }
+
         public static object Select(object id)
         {
             object value;

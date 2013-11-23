@@ -6,7 +6,7 @@
 
     public interface ILayerProductionApplicationService
     {
-        Factory OpenFactory(FactoryId factoryId);
+        Factory OpenFactory(FactoryId factoryId, string factoryName);
 
         IEnumerable<Layer> ProduceLayers(FactoryId factoryId, int numberOfLayers);
     }

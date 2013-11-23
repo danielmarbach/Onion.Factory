@@ -44,18 +44,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Application.cs" />
-    <Compile Include="Core\DomainServices\FactoryDomainService.cs" />
-    <Compile Include="Core\Domain\FactoryId.cs" />
-    <Compile Include="Core\Domain\IFactoryOpened.cs" />
-    <Compile Include="Core\DomainServices\IFactoryRepository.cs" />
-    <Compile Include="Core\ApplicationServices\LayerProductionApplicationService.cs" />
-    <Compile Include="Core\Domain\Factory.cs" />
-    <Compile Include="Core\DomainServices\IFactoryDomainService.cs" />
-    <Compile Include="Core\DomainServices\ILayerDomainService.cs" />
-    <Compile Include="Core\ApplicationServices\ILayerProductionApplicationService.cs" />
-    <Compile Include="Core\DomainServices\ILayerRepository.cs" />
-    <Compile Include="Core\Domain\Layer.cs" />
-    <Compile Include="Core\DomainServices\LayerDomainService.cs" />
+    <Compile Include="Core\2_DomainServices\FactoryDomainService.cs" />
+    <Compile Include="Core\3_Domain\FactoryId.cs" />
+    <Compile Include="Core\3_Domain\IFactoryOpened.cs" />
+    <Compile Include="Core\2_DomainServices\IFactoryRepository.cs" />
+    <Compile Include="Core\1_ApplicationServices\LayerProductionApplicationService.cs" />
+    <Compile Include="Core\3_Domain\Factory.cs" />
+    <Compile Include="Core\2_DomainServices\IFactoryDomainService.cs" />
+    <Compile Include="Core\2_DomainServices\ILayerDomainService.cs" />
+    <Compile Include="Core\1_ApplicationServices\ILayerProductionApplicationService.cs" />
+    <Compile Include="Core\2_DomainServices\ILayerRepository.cs" />
+    <Compile Include="Core\3_Domain\Layer.cs" />
+    <Compile Include="Core\2_DomainServices\LayerDomainService.cs" />
     <Compile Include="Database.cs" />
     <Compile Include="FactoryOpened.cs" />
     <Compile Include="FactoryRepository.cs" />
