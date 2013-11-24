@@ -8,25 +8,25 @@
     {
         private readonly FactoryId factoryId;
 
-        private readonly List<Layer> producedLayers;
+        private readonly List<Onion> producedOnions;
 
-        public Factory(FactoryId factoryId, string name)
+        public Factory(FactoryId factoryId, FactoryName name)
         {
             this.factoryId = factoryId;
             this.Name = name;
 
-            this.producedLayers = new List<Layer>();
+            this.producedOnions = new List<Onion>();
         }
 
         public DateTimeOffset OpenedAt { get; private set; }
 
         public string Name { get; private set; }
 
-        public ReadOnlyCollection<Layer> ProducedLayers
+        public ReadOnlyCollection<Onion> ProducedOnions
         {
             get
             {
-                return new ReadOnlyCollection<Layer>(this.producedLayers);
+                return new ReadOnlyCollection<Onion>(this.producedOnions);
             }
         }
 
@@ -43,9 +43,9 @@
             this.OpenedAt = opened.At();
         }
 
-        public void Assign(IEnumerable<Layer> layers)
+        public void Assign(IEnumerable<Onion> onions)
         {
-            this.producedLayers.AddRange(layers);
+            this.producedOnions.AddRange(onions);
         }
     }
 }

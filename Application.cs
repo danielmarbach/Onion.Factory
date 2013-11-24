@@ -5,15 +5,15 @@ namespace Onion.Factory
     [TestFixture]
     public class Application
     {
-        private LayerProductionView view;
+        private OnionProductionView view;
 
-        private LayerProductionPresenter presenter;
+        private OnionProductionPresenter presenter;
 
         [SetUp]
         public void SetUp()
         {
-            this.view = new LayerProductionView();
-            this.presenter = new LayerProductionPresenter(this.view);
+            this.view = new OnionProductionView();
+            this.presenter = new OnionProductionPresenter(this.view);
             this.presenter.Initialize();
         }
 
@@ -21,7 +21,7 @@ namespace Onion.Factory
         public void Run()
         {
             this.view.ClickOpenFactory();
-            this.view.ClickProduceLayer();
+            this.view.ClickProduceOnion();
         }
     }
 }

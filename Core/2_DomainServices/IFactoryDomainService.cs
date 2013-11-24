@@ -6,8 +6,8 @@
 
     public interface IFactoryDomainService
     {
-        Factory OpenFactory(FactoryId factoryId, string name = "Onion Factory");
+        Factory OpenFactory(FactoryId factoryId, FactoryName name);
 
-        void AssignProducedLayers(FactoryId factoryId, IEnumerable<Layer> producedLayers);
+        void AssignProducedOnions(FactoryId factoryId, IEnumerable<Onion> producedOnions);
     }
 }

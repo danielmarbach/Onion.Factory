@@ -4,8 +4,8 @@
 
     using Onion.Factory.Core.Domain;
 
-    public interface ILayerDomainService
+    public interface IOnionDomainService
     {
-        IReadOnlyCollection<Layer> ProduceLayers(int numberOfLayers);
+        IReadOnlyCollection<Onion> ProduceOnions(OnionQuantity quantity);
     }
 }

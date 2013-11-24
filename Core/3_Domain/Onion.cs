@@ -2,9 +2,9 @@
 {
     using System;
 
-    public class Layer
+    public class Onion
     {
-        public Layer()
+        public Onion()
         {
             this.Id = Guid.NewGuid();
         }

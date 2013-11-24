@@ -16,7 +16,7 @@
             this.repository = repository;
         }
 
-        public Factory OpenFactory(FactoryId factoryId, string name = "Onion Factory")
+        public Factory OpenFactory(FactoryId factoryId, FactoryName name)
         {
             var factory = new Factory(factoryId, name);
 
@@ -27,11 +27,11 @@
             return factory;
         }
 
-        public void AssignProducedLayers(FactoryId factoryId, IEnumerable<Layer> producedLayers)
+        public void AssignProducedOnions(FactoryId factoryId, IEnumerable<Onion> producedOnions)
         {
             var factory = this.repository.Load(factoryId);
 
-            factory.Assign(producedLayers);
+            factory.Assign(producedOnions);
 
             this.repository.Update(factory);
         }

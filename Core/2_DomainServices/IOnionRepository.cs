@@ -2,8 +2,8 @@
 {
     using Onion.Factory.Core.Domain;
 
-    public interface ILayerRepository
+    public interface IOnionRepository
     {
-        void Save(Layer layer);
+        void Save(Onion onion);
     }
 }

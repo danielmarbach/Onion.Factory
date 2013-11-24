@@ -6,13 +6,13 @@
     using Onion.Factory.Core.Domain;
     using Onion.Factory.Core.DomainServices;
 
-    public class LayerRepository : ILayerRepository
+    public class OnionRepository : IOnionRepository
     {
-        public void Save(Layer layer)
+        public void Save(Onion onion)
         {
             using (var tx = new TransactionScope())
             {
-                Database.Insert(layer.Id, layer);
+                Database.Insert(onion.Id, onion);
 
                 tx.Complete();
             }

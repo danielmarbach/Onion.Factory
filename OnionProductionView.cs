@@ -5,20 +5,20 @@
 
     using Onion.Factory.Core.Domain;
 
-    public class LayerProductionView
+    public class OnionProductionView
     {
         public EventHandler<OpenFactoryEventArgs> OpenFactoryClicked = delegate { };
 
-        public EventHandler<ProduceLayerEventArgs> ProduceLayerClicked = delegate { };
+        public EventHandler<ProduceOnionsEventArgs> ProduceOnionClicked = delegate { };
 
-        public void Update(IEnumerable<Layer> layers)
+        public void Update(IEnumerable<Onion> onions)
         {
             int count = 0;
 
-            foreach (var layerInfo in layers)
+            foreach (var onion in onions)
             {
                 count++;
-                Logger.Log("Updating view for layer " + count + "and id " + layerInfo.Id);
+                Logger.Log("Updating view for onion " + count + "and id " + onion.Id);
             }
         }
 
@@ -27,9 +27,9 @@
             this.OpenFactoryClicked(this, new OpenFactoryEventArgs("Foo Bar Baz"));
         }
 
-        public void ClickProduceLayer()
+        public void ClickProduceOnion()
         {
-            this.ProduceLayerClicked(this, new ProduceLayerEventArgs("Foo Bar Baz", 10));
+            this.ProduceOnionClicked(this, new ProduceOnionsEventArgs("Foo Bar Baz", 10));
         }
     }
 }
