@@ -20,7 +20,7 @@
 
         public DateTimeOffset OpenedAt { get; private set; }
 
-        public string Name { get; private set; }
+        public FactoryName Name { get; private set; }
 
         public ReadOnlyCollection<Onion> ProducedOnions
         {
