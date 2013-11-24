@@ -36,11 +36,6 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Transactions" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Application.cs" />
@@ -59,17 +54,18 @@
     <Compile Include="Core\3_Domain\Onion.cs" />
     <Compile Include="Core\2_DomainServices\OnionDomainService.cs" />
     <Compile Include="Core\3_Domain\OnionQuantity.cs" />
-    <Compile Include="Database.cs" />
-    <Compile Include="FactoryOpened.cs" />
-    <Compile Include="FactoryRepository.cs" />
+    <Compile Include="DependencyResolution\WireCore.cs" />
+    <Compile Include="Infrastructure\Database.cs" />
+    <Compile Include="Infrastructure\FactoryOpened.cs" />
+    <Compile Include="Infrastructure\FactoryRepository.cs" />
     <Compile Include="OnionProductionPresenter.cs" />
     <Compile Include="OnionProductionView.cs" />
-    <Compile Include="OnionRepository.cs" />
-    <Compile Include="Logger.cs" />
+    <Compile Include="Infrastructure\OnionRepository.cs" />
+    <Compile Include="Infrastructure\Logger.cs" />
     <Compile Include="OpenFactoryEventArgs.cs" />
     <Compile Include="ProduceOnionsEventArgs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SystemClock.cs" />
+    <Compile Include="Infrastructure\SystemClock.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

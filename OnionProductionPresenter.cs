@@ -2,7 +2,6 @@
 {
     using Onion.Factory.Core.ApplicationServices;
     using Onion.Factory.Core.Domain;
-    using Onion.Factory.Core.DomainServices;
 
     public class OnionProductionPresenter
     {
@@ -10,12 +9,9 @@
 
         private readonly IOnionProductionApplicationService onionProductionApplicationService;
 
-        public OnionProductionPresenter(OnionProductionView view)
-            : this(view, new OnionProductionApplicationService(new FactoryDomainService(new FactoryRepository(), new FactoryOpened()), new OnionDomainService(new OnionRepository())))
-        {
-        }
-
-        public OnionProductionPresenter(OnionProductionView view, IOnionProductionApplicationService onionProductionApplicationService)
+        public OnionProductionPresenter(
+            OnionProductionView view,
+            IOnionProductionApplicationService onionProductionApplicationService)
         {
             this.onionProductionApplicationService = onionProductionApplicationService;
             this.view = view;

@@ -8,11 +8,15 @@
 
         public OnionQuantity(int numberOfOnions)
         {
-            if(numberOfOnions < 1)
+            if (numberOfOnions < 1)
+            {
                 throw new ArgumentOutOfRangeException("numberOfOnions", numberOfOnions, "Should be greater than one.");
+            }
 
             if (numberOfOnions > 255)
+            {
                 throw new ArgumentOutOfRangeException("numberOfOnions", numberOfOnions, "Should be smaller than 256.");
+            }
 
             this.numberOfOnions = numberOfOnions;
         }

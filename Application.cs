@@ -2,6 +2,8 @@
 
 namespace Onion.Factory
 {
+    using Onion.Factory.DependencyResolution;
+
     [TestFixture]
     public class Application
     {
@@ -13,7 +15,7 @@ namespace Onion.Factory
         public void SetUp()
         {
             this.view = new OnionProductionView();
-            this.presenter = new OnionProductionPresenter(this.view);
+            this.presenter = new OnionProductionPresenter(this.view, WireCore.Up());
             this.presenter.Initialize();
         }
 

@@ -11,7 +11,9 @@
 
         private readonly IOnionDomainService onionDomainService;
 
-        public OnionProductionApplicationService(IFactoryDomainService factoryDomainService, IOnionDomainService onionDomainService)
+        public OnionProductionApplicationService(
+            IFactoryDomainService factoryDomainService,
+            IOnionDomainService onionDomainService)
         {
             this.onionDomainService = onionDomainService;
             this.factoryDomainService = factoryDomainService;
