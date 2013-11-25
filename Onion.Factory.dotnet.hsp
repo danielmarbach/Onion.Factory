@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local-project language="dotnet" version="4.0.5155" xml-version="3" flavor="dotNet">
+  <property name="hide-externals" value="true" />
+  <property name="detail-mode" value="true" />
+  <property name="action-set-mod" value="10" />
+  <assemblyList relativeto="">
+    <assembly kind="lib" path="bin\Debug\Onion.Factory.dll" />
+  </assemblyList>
+  <restructuring>
+    <set version="3" name="Model 1" hiview="Codemap" active="true" todo="false" list="0" />
+  </restructuring>
+  <grid-set sep="." version="4.0.5155">
+    <grid name="Onions" enforce="true" locked="true" strict="false">
+      <row>
+        <cell name="Factory" pattern="Onion.Factory.?" vexpanded="false" visibility="public" drill="false">
+          <grid>
+            <row>
+              <cell name="Application" pattern="Onion.Factory.Application" vexpanded="false" visibility="public" drill="false" />
+            </row>
+            <row>
+              <cell name="OnionProductionPresenter" pattern="Onion.Factory.OnionProductionPresenter" vexpanded="false" visibility="public" drill="false" />
+            </row>
+            <row>
+              <cell name="FactoryOpened" pattern="Onion.Factory.FactoryOpened" vexpanded="false" visibility="public" drill="false" />
+              <cell name="FactoryRepository" pattern="Onion.Factory.FactoryRepository" vexpanded="false" visibility="public" drill="false" />
+              <cell name="OnionProductionView" pattern="Onion.Factory.OnionProductionView" vexpanded="false" visibility="public" drill="false" />
+              <cell name="OnionRepository" pattern="Onion.Factory.OnionRepository" vexpanded="false" visibility="public" drill="false" />
+            </row>
+            <row>
+              <cell name="Database" pattern="Onion.Factory.Database" vexpanded="false" visibility="public" drill="false" />
+              <cell name="Logger" pattern="Onion.Factory.Logger" vexpanded="false" visibility="public" drill="false" />
+              <cell name="OpenFactoryEventArgs" pattern="Onion.Factory.OpenFactoryEventArgs" vexpanded="false" visibility="public" drill="false" />
+              <cell name="ProduceOnionsEventArgs" pattern="Onion.Factory.ProduceOnionsEventArgs" vexpanded="false" visibility="public" drill="false" />
+              <cell name="SystemClock" pattern="Onion.Factory.SystemClock" vexpanded="false" visibility="public" drill="false" />
+            </row>
+          </grid>
+        </cell>
+      </row>
+      <row>
+        <cell name="Core" pattern="Onion.Factory.Core.*" vexpanded="false" visibility="public" drill="false" />
+      </row>
+      <description>Top-level breakout</description>
+    </grid>
+  </grid-set>
+</local-project>
+
